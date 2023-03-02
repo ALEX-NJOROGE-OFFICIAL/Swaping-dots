@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+.swap-dots{
+    margin-left: 100px;
+    width: 160px;
+    aspect-ratio:  1;
+    -- g; no-repeat;
+    radial-gradient(fartherst-side,
+    #ff206e 90%, #0000)
+
+    background: var(-- g), var(-- g),
+    var(-- g), var(--g);
+    background-size:40% 40%;
+    animation: swap 1s infinite
+
+    
+}
+
+@keyframes swap{
+
+    0%{
+background-position:  0 0, 100% 0,
+100% 100%, 0 100%;
+    }
+    40%
+    50%{
+        background-position: 100% 100%,
+        100% 0, 0 0, 0 100%;
+    }
+    90%
+    100%{
+        background-position: 100% 100%,
+        0 100%, 0 0, 100% 0;
+    }
+}
+
+
+
+
+</style>
+
+
+</head>
+<body >
+
+    <h1>Swap dots Animation</h1>
+    <div class="swap-dots" ></div>
+
+
+
+
+</body>
+</html>
